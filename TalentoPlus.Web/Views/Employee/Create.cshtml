@@ -1,0 +1,85 @@
+@model TalentoPlus.Web.ViewModels.Employees.CreateEmployeeViewModel
+
+<div class="d-flex justify-content-between align-items-center mb-4 fade-in">
+    <div>
+        <h2 class="fw-bold text-primary mb-0">Crear Empleado</h2>
+        <p class="text-muted">Agrega un nuevo miembro a tu equipo</p>
+    </div>
+</div>
+
+<div class="card-soft fade-in">
+
+<form asp-action="Create">
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Apellido</label>
+            <input asp-for="LastName" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input asp-for="BirthDate" type="date" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Fecha de Ingreso</label>
+            <input asp-for="HireDate" type="date" class="form-control" />
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Dirección</label>
+            <input asp-for="Address" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Correo Electrónico</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Teléfono</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Cargo</label>
+            <input asp-for="JobTitle" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Salario</label>
+            <input asp-for="Salary" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Estado</label>
+            <select asp-for="Status" asp-items="ViewBag.Status" class="form-select"></select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Educación</label>
+            <select asp-for="Education" asp-items="ViewBag.Education" class="form-select"></select>
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Departamento</label>
+            <select asp-for="DepartmentId" asp-items="ViewBag.Departments" class="form-select"></select>
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Perfil Profesional</label>
+            <textarea asp-for="ProfessionalProfile" rows="4" class="form-control"></textarea>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-soft mt-4">Guardar</button>
+    <a href="/Employee" class="btn btn-secondary btn-soft mt-4">Cancelar</a>
+
+</form>
+</div>

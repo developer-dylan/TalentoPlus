@@ -1,0 +1,160 @@
+@model TalentoPlus.Data.Entities.Employee
+
+@{
+    ViewData["Title"] = "Detalles del Empleado";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 fade-in no-print">
+    <div>
+        <h2 class="fw-bold text-primary mb-0">Hoja de Vida Profesional</h2>
+        <p class="text-muted">Perfil detallado de @Model.FullName</p>
+    </div>
+    <div>
+        <a class="btn btn-outline-secondary me-2" href="/Employee">
+            <i class="bi bi-arrow-left"></i> Volver
+        </a>
+        <button onclick="window.print()" class="btn btn-success me-2">
+            <i class="bi bi-printer"></i> Imprimir CV
+        </button>
+        <a class="btn btn-primary" href="/Employee/Edit/@Model.Id">
+            <i class="bi bi-pencil"></i> Editar
+        </a>
+    </div>
+</div>
+
+<div class="cv-container fade-in">
+    <!-- Header with Photo and Name -->
+    <div class="cv-header d-flex align-items-center mb-5 border-bottom pb-4">
+        <div class="me-4">
+            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" 
+                 style="width: 120px; height: 120px; color: var(--primary-color); font-size: 3rem; font-weight: bold; border: 4px solid #eef2f6;">
+                @if (!string.IsNullOrEmpty(Model.FirstName) && !string.IsNullOrEmpty(Model.LastName))
+                {
+                    <span>@Model.FirstName.Substring(0,1)@Model.LastName.Substring(0,1)</span>
+                }
+                else
+                {
+                    <i class="bi bi-person"></i>
+                }
+            </div>
+        </div>
+        <div>
+            <h1 class="cv-name mb-1" style="color: var(--primary-color); font-weight: 800;">@Model.FullName</h1>
+            <h3 class="cv-title text-muted text-uppercase" style="letter-spacing: 2px; font-size: 1.2rem;">@Model.JobTitle</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Left Column: Personal Info -->
+        <div class="col-md-4 border-end pe-4">
+            <h4 class="cv-section-title mb-4">Datos Personales</h4>
+            
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">ID Empleado</label>
+                <div class="fw-medium">@Model.Id</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">Estado</label>
+                <div>
+                    @if(Model.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Active)
+                    {
+                        <span class="badge bg-success">Activo</span>
+                    }
+                    else if(Model.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Inactive)
+                    {
+                        <span class="badge bg-danger">Inactivo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Vacaciones</span>
+                    }
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">Correo Electrónico</label>
+                <div class="fw-medium">@Model.Email</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">Teléfono</label>
+                <div class="fw-medium">@Model.Phone</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">Fecha de Nacimiento</label>
+                <div class="fw-medium">@Model.BirthDate.ToShortDateString()</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-muted small text-uppercase fw-bold">Dirección</label>
+                <div class="fw-medium">@Model.Address</div>
+            </div>
+        </div>
+
+        <!-- Right Column: Work Info & Profile -->
+        <div class="col-md-8 ps-4">
+            
+            <div class="mb-5">
+                <h4 class="cv-section-title mb-4">Perfil Profesional</h4>
+                <p class="text-muted" style="line-height: 1.8;">
+                    @Model.ProfessionalProfile
+                </p>
+            </div>
+
+            <div class="mb-5">
+                <h4 class="cv-section-title mb-4">Información Laboral</h4>
+                
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label class="text-muted small text-uppercase fw-bold">Departamento</label>
+                        <div class="fw-bold fs-5">@Model.Department?.Name</div>
+                    </div>
+                    <div class="col-6">
+                        <label class="text-muted small text-uppercase fw-bold">Fecha de Ingreso</label>
+                        <div class="fw-bold fs-5">@Model.HireDate.ToShortDateString()</div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label class="text-muted small text-uppercase fw-bold">Salario Actual</label>
+                        <div class="fw-medium">$@Model.Salary.ToString("N2")</div>
+                    </div>
+                    <div class="col-6">
+                        <label class="text-muted small text-uppercase fw-bold">Nivel Educativo</label>
+                        <div class="fw-medium">@Model.Education</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    @@media print {
+        @@page { margin: 0; size: A4; }
+        body { background: white; -webkit-print-color-adjust: exact; }
+        .no-print, .navbar, footer, .btn { display: none !important; }
+        .cv-container {
+            box-shadow: none;
+            border: none;
+            width: 100%;
+            max-width: 100%;
+            padding: 40px;
+            margin: 0;
+        }
+        .cv-section-title {
+            color: var(--primary-color) !important;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .badge {
+            border: 1px solid #000;
+            color: #000 !important;
+            background: none !important;
+        }
+    }
+</style>

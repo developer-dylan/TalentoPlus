@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCC09950-382E-4E65-BDC0-2BF3DCBED0BC}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentoPlus.Web", "TalentoPlus.Web\TalentoPlus.Web.csproj", "{F215C715-CA7A-4867-9D4F-B15098615D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentoPlus.Api", "TalentoPlus.Api\TalentoPlus.Api.csproj", "{48C398D8-0590-4EBA-A836-F33AF4C2C44C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentoPlus.Data", "TalentoPlus.Data\TalentoPlus.Data.csproj", "{B6503E63-429B-4349-A919-D8BD1518C33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentoPlus.Tests", "TalentoPlus.Tests\TalentoPlus.Tests.csproj", "{C3764849-8465-4A81-A6CA-41C8AF926C34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F215C715-CA7A-4867-9D4F-B15098615D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F215C715-CA7A-4867-9D4F-B15098615D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F215C715-CA7A-4867-9D4F-B15098615D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F215C715-CA7A-4867-9D4F-B15098615D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C398D8-0590-4EBA-A836-F33AF4C2C44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C398D8-0590-4EBA-A836-F33AF4C2C44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C398D8-0590-4EBA-A836-F33AF4C2C44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C398D8-0590-4EBA-A836-F33AF4C2C44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6503E63-429B-4349-A919-D8BD1518C33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6503E63-429B-4349-A919-D8BD1518C33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6503E63-429B-4349-A919-D8BD1518C33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6503E63-429B-4349-A919-D8BD1518C33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3764849-8465-4A81-A6CA-41C8AF926C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3764849-8465-4A81-A6CA-41C8AF926C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3764849-8465-4A81-A6CA-41C8AF926C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3764849-8465-4A81-A6CA-41C8AF926C34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

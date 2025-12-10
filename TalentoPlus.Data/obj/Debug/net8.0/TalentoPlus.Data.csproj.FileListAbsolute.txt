@@ -1,0 +1,12 @@
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.deps.json
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.dll
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.pdb
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.csproj.AssemblyReference.cache
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.AssemblyInfoInputs.cache
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.AssemblyInfo.cs
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.csproj.CoreCompileInputs.cache
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.dll
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/refint/TalentoPlus.Data.dll
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.pdb
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/ref/TalentoPlus.Data.dll

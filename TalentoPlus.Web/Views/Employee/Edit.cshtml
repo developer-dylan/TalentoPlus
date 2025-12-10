@@ -1,0 +1,111 @@
+@model TalentoPlus.Web.ViewModels.Employees.EditEmployeeViewModel
+
+@{
+    ViewData["Title"] = "Editar Empleado";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 fade-in">
+    <div>
+        <h2 class="fw-bold text-primary mb-0">Editar Empleado</h2>
+        <p class="text-muted">Actualizar información de @Model.FirstName @Model.LastName</p>
+    </div>
+</div>
+
+<div class="card-soft fade-in">
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Apellido</label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input asp-for="BirthDate" type="date" class="form-control" />
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Fecha de Ingreso</label>
+            <input asp-for="HireDate" type="date" class="form-control" />
+            <span asp-validation-for="HireDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Dirección</label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Correo Electrónico</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Teléfono</label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Cargo</label>
+            <input asp-for="JobTitle" class="form-control" />
+            <span asp-validation-for="JobTitle" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Salario</label>
+            <input asp-for="Salary" class="form-control" />
+            <span asp-validation-for="Salary" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Estado</label>
+            <select asp-for="Status" asp-items="ViewBag.Status" class="form-select"></select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Educación</label>
+            <select asp-for="Education" asp-items="ViewBag.Education" class="form-select"></select>
+            <span asp-validation-for="Education" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Departamento</label>
+            <select asp-for="DepartmentId" asp-items="ViewBag.Departments" class="form-select"></select>
+            <span asp-validation-for="DepartmentId" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12">
+            <label class="form-label">Perfil Profesional</label>
+            <textarea asp-for="ProfessionalProfile" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="ProfessionalProfile" class="text-danger"></span>
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary btn-soft mt-4">Guardar Cambios</button>
+    <a href="/Employee" class="btn btn-secondary btn-soft mt-4">Cancelar</a>
+
+</form>
+
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

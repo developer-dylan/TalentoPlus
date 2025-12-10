@@ -1,0 +1,48 @@
+﻿services:
+  db:
+    image: postgres
+    container_name: talentoplus-db-1
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: TalentoDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Qwe.123*
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  talentoplus.web:
+    image: talentoplus-web
+    build:
+      context: .
+      dockerfile: TalentoPlus.Web/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=TalentoDB;Username=postgres;Password=Qwe.123*
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:79
+      - Gemini__ApiKey=AIzaSyCs1KKm1KSOENvfoScCEXRBPYccrZ102eE
+    ports:
+      - "5079:79"
+    depends_on:
+      - db
+
+  talentoplus.api:
+    image: talentoplus-api
+    build:
+      context: .
+      dockerfile: TalentoPlus.Api/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Database=TalentoDB;Username=postgres;Password=yourpassword
+      - Jwt__Secret=SuperSecretKey1234567890_ChangeMeInProd
+      - Smtp__Host=smtp.example.com
+      - Smtp__Port=587
+      - Smtp__User=user
+      - Smtp__Password=pass
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5001:80"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

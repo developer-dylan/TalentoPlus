@@ -1,0 +1,102 @@
+@model TalentoPlus.Web.Models.PaginatedList<TalentoPlus.Data.Entities.Employee>
+
+<div class="d-flex justify-content-between align-items-center mb-4 fade-in">
+    <div>
+        <h2 class="fw-bold text-primary mb-0">Empleados</h2>
+        <p class="text-muted">Gestiona tu fuerza laboral eficientemente</p>
+    </div>
+    <a class="btn btn-primary" href="/Employee/Create">
+        <i class="bi bi-plus-lg"></i> Agregar Empleado
+    </a>
+</div>
+
+<div class="card-soft fade-in">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cargo</th>
+                <th>Departamento</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px; color: var(--primary-color); font-weight: bold;">
+                                @emp.FirstName.Substring(0,1)@emp.LastName.Substring(0,1)
+                            </div>
+                            <div>
+                                <div class="fw-bold">@emp.FullName</div>
+                                <div class="small text-muted">@emp.Email</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>@emp.JobTitle</td>
+                    <td>
+                        <span class="badge bg-light text-dark border">@emp.Department?.Name</span>
+                    </td>
+                    <td>
+                        @if (emp.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Active)
+                        {
+                            <span class="badge bg-success bg-opacity-10 text-success">Activo</span>
+                        }
+                        else if (emp.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Inactive)
+                        {
+                            <span class="badge bg-danger bg-opacity-10 text-danger">Inactivo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning bg-opacity-10 text-warning">Vacaciones</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-sm text-primary" href="/Employee/Details/@emp.Id" title="Detalles">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a class="btn btn-light btn-sm text-warning" href="/Employee/Edit/@emp.Id" title="Editar">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a class="btn btn-light btn-sm text-info" href="/Employee/CV/@emp.Id" title="Ver CV">
+                                <i class="bi bi-file-person"></i> CV
+                            </a>
+                            <a class="btn btn-light btn-sm text-danger" href="/Employee/Delete/@emp.Id" title="Eliminar">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <div class="text-muted small">
+            Página @Model.PageIndex de @Model.TotalPages
+        </div>
+        <nav>
+            <ul class="pagination mb-0">
+                <li class="page-item @(!Model.HasPreviousPage ? "disabled" : "")">
+                    <a class="page-link" href="/Employee?pageNumber=@(Model.PageIndex - 1)">Anterior</a>
+                </li>
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                     <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                        <a class="page-link" href="/Employee?pageNumber=@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @(!Model.HasNextPage ? "disabled" : "")">
+                    <a class="page-link" href="/Employee?pageNumber=@(Model.PageIndex + 1)">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

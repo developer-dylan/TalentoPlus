@@ -1,0 +1,101 @@
+@model TalentoPlus.Data.Entities.Employee
+
+@{
+    ViewData["Title"] = "Hoja de Vida - " + Model.FullName;
+}
+
+<div class="container mt-5 mb-5 fade-in">
+    
+    <div class="d-flex justify-content-between align-items-center mb-4 no-print">
+        <a href="/Employee" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Volver
+        </a>
+        <div>
+            <button onclick="window.print()" class="btn btn-secondary me-2">
+                <i class="bi bi-printer"></i> Imprimir
+            </button>
+            <a href="/Employee/ResumePdf/@Model.Id" class="btn btn-primary">
+                <i class="bi bi-download"></i> Descargar PDF
+            </a>
+        </div>
+    </div>
+
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1 class="cv-name">@Model.FullName</h1>
+            <div class="cv-title">@Model.JobTitle</div>
+            <div class="mt-2 text-muted">
+                <i class="bi bi-envelope"></i> @Model.Email | 
+                <i class="bi bi-telephone"></i> @Model.Phone
+            </div>
+            <div class="text-muted">
+                <i class="bi bi-geo-alt"></i> @Model.Address
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3 class="cv-section-title">Perfil Profesional</h3>
+            <p>@Model.ProfessionalProfile</p>
+        </div>
+
+        <div class="cv-section">
+            <h3 class="cv-section-title">Información Laboral</h3>
+            
+            <div class="cv-item">
+                <div class="cv-label">Cargo</div>
+                <div class="cv-value"><strong>@Model.JobTitle</strong></div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-label">Departamento</div>
+                <div class="cv-value">@Model.Department?.Name</div>
+            </div>
+            
+            <div class="cv-item">
+                <div class="cv-label">Estado</div>
+                <div class="cv-value">
+                    @if(Model.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Active)
+                    {
+                        <span class="badge bg-success">Activo</span>
+                    }
+                    else if(Model.Status == TalentoPlus.Data.Entities.Enums.EmploymentStatus.Inactive)
+                    {
+                        <span class="badge bg-danger">Inactivo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Vacaciones</span>
+                    }
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-label">Fecha de Ingreso</div>
+                <div class="cv-value">@Model.HireDate.ToShortDateString()</div>
+            </div>
+             
+            <div class="cv-item">
+                <div class="cv-label">Salario</div>
+                <div class="cv-value">$@Model.Salary.ToString("N2")</div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3 class="cv-section-title">Educación</h3>
+            <div class="cv-item">
+                <div class="cv-label">Nivel</div>
+                <div class="cv-value">@Model.Education</div>
+            </div>
+        </div>
+        
+        <div class="cv-section">
+            <h3 class="cv-section-title">Información Personal</h3>
+            <div class="cv-item">
+                <div class="cv-label">Fecha de Nacimiento</div>
+                <div class="cv-value">@Model.BirthDate.ToShortDateString()</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

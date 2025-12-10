@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TDxgbQQ2KoGawt3elI3YvO1oj9q5bLmgLFEVJom4YIQ=",
+  "Source": "TalentoPlus.Api",
+  "BasePath": "_content/TalentoPlus.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
