@@ -10,3 +10,4 @@
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/refint/TalentoPlus.Data.dll
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.pdb
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/ref/TalentoPlus.Data.dll
+/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.sourcelink.json

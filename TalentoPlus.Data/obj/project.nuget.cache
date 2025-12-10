@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2harvumVRAt04kvUWQEcFgicWCeatuPr65CVNLt6+c2W+asTqkQXmempvtm+QwdnS89ZZac7LSPqB2c5CsY38w==",
+  "dgSpecHash": "5sdsy/yURNU=",
   "success": true,
   "projectFilePath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,9 @@
     "/home/Coder/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/Coder/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/Coder/.nuget/packages/npgsql/8.0.3/npgsql.8.0.3.nupkg.sha512",
-    "/home/Coder/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.4/npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
+    "/home/Coder/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.4/npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "/home/Coder/.nuget/packages/microsoft.netcore.app.ref/8.0.21/microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
+    "/home/Coder/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.21/microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512"
   ],
   "logs": []
 }

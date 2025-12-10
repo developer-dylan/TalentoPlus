@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B1KXTkEWBek0bSQjS/oBXpQA3wfCDhWaIhppUYZFeK5yYV3l6g2wUOGJogTkm8v5s7ljFqdD8p0avcr66K2t5Q==",
+  "dgSpecHash": "3qlkqOz//W8=",
   "success": true,
   "projectFilePath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/TalentoPlus.Web.csproj",
   "expectedPackageFiles": [
@@ -188,7 +188,10 @@
     "/home/Coder/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/home/Coder/.nuget/packages/system.threading.tasks.dataflow/7.0.0/system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "/home/Coder/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/Coder/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512"
+    "/home/Coder/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512",
+    "/home/Coder/.nuget/packages/microsoft.netcore.app.ref/8.0.21/microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
+    "/home/Coder/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.21/microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512",
+    "/home/Coder/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.21/microsoft.netcore.app.host.linux-x64.8.0.21.nupkg.sha512"
   ],
   "logs": []
 }
