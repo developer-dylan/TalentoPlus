@@ -1881,32 +1881,33 @@
     ]
   },
   "packageFolders": {
-    "/home/Coder/.nuget/packages/": {}
+    "/home/fermotta/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj",
+      "projectUniqueName": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj",
       "projectName": "TalentoPlus.Api",
-      "projectPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj",
-      "packagesPath": "/home/Coder/.nuget/packages/",
-      "outputPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Api/obj/",
+      "projectPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj",
+      "packagesPath": "/home/fermotta/.nuget/packages/",
+      "outputPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/Coder/.nuget/NuGet/NuGet.Config"
+        "/home/fermotta/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj": {
-              "projectPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj"
+            "/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj": {
+              "projectPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj"
             }
           }
         }
@@ -1921,7 +1922,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1966,15 +1967,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
+            "version": "[8.0.20, 8.0.20]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.21, 8.0.21]"
+            "version": "[8.0.20, 8.0.20]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
+            "version": "[8.0.20, 8.0.20]"
           }
         ],
         "frameworkReferences": {
@@ -1985,7 +1986,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/Coder/.dotnet/sdk/10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

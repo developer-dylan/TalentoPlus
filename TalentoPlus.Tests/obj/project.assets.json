@@ -8803,35 +8803,36 @@
     ]
   },
   "packageFolders": {
-    "/home/Coder/.nuget/packages/": {}
+    "/home/fermotta/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Tests/TalentoPlus.Tests.csproj",
+      "projectUniqueName": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Tests/TalentoPlus.Tests.csproj",
       "projectName": "TalentoPlus.Tests",
-      "projectPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Tests/TalentoPlus.Tests.csproj",
-      "packagesPath": "/home/Coder/.nuget/packages/",
-      "outputPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Tests/obj/",
+      "projectPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Tests/TalentoPlus.Tests.csproj",
+      "packagesPath": "/home/fermotta/.nuget/packages/",
+      "outputPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/Coder/.nuget/NuGet/NuGet.Config"
+        "/home/fermotta/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj": {
-              "projectPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj"
+            "/home/fermotta/Música/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj": {
+              "projectPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Api/TalentoPlus.Api.csproj"
             },
-            "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj": {
-              "projectPath": "/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj"
+            "/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj": {
+              "projectPath": "/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/TalentoPlus.Data.csproj"
             }
           }
         }
@@ -8840,7 +8841,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -8890,12 +8897,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

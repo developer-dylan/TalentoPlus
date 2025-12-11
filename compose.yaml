@@ -20,7 +20,8 @@
       - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=TalentoDB;Username=postgres;Password=Qwe.123*
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:79
-      - Gemini__ApiKey=AIzaSyCs1KKm1KSOENvfoScCEXRBPYccrZ102eE
+      - Gemini__ApiKey=AIzaSyCR_F-V3Whhor5Rs8g4aE55dV02TIZqbig
+      - Gemini__Model=gemini-2.5-flash
     ports:
       - "5079:79"
     depends_on:

@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"EFYU7qItMtASSGydMP4ANYRnnCIu2nmlSlJYT6C7J5Q=","Source":"TalentoPlus.Api","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "hjBPbOOtcAN58sCu6GbUCyBq2t19BHEh18POPy+CCnY=",
+  "Source": "TalentoPlus.Api",
+  "BasePath": "_content/TalentoPlus.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -2276,7 +2276,10 @@
           "TalentoPlus.Data": "1.0.0"
         },
         "runtime": {
-          "TalentoPlus.Api.dll": {}
+          "TalentoPlus.Api.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "TalentoPlus.Api.dll": {}
@@ -2290,7 +2293,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "runtime": {
-          "TalentoPlus.Data.dll": {}
+          "TalentoPlus.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "TalentoPlus.Data.dll": {}
