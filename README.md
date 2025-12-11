@@ -37,11 +37,11 @@ Before you start, make sure you have installed:
     *   Open the file `TalentoPlus.Web/appsettings.json`.
     *   Find the `ConnectionStrings` section.
     *   Update the connection string with your PostgreSQL username and password.
-    *   Example: `"Host=localhost;Database=TalentoDB;Username=postgres;Password=Qwe.123*"`
+    *   Example: `"Host=localhost;Database=NAME;Username=postgres;Password=TU_PASSWORD*"`
 
 3.  **Configure AI (Optional)**:
     *   In the same `appsettings.json` file, find the `Gemini` section.
-    *   Add your API Key: `"ApiKey": "AIzaSyCs1KKm1KSOENvfoScCEXRBPYccrZ102eE"`.
+    *   Add your API Key: `"ApiKey": ""`.
 
 4.  **Run the Application**:
     *   Open your terminal or command prompt.
@@ -74,7 +74,7 @@ If you have Docker installed, you can run the entire application (App + Database
 
 ## How to Use
 
-1.  **Login**: Use the default admin credentials (e.g., `admin@talento.com` / `Admin123!`) if seeded, or register a new user.
+1.  **Login**: Use the default admin credentials (e.g., `admin@talento.com` / `Admin123.`) if seeded, or register a new user.
 2.  **Import Data**: Go to the **"Importar Excel"** menu to upload your employee data file.
 3.  **Manage Employees**: Go to **"Empleados"** to see the list.
     *   Click the **Eye Icon** to view the Professional CV.
