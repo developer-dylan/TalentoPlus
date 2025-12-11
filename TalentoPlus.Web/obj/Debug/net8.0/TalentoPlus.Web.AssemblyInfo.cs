@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalentoPlus.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d0b5cb3569066571b88cf03045308da8342f890")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6fa068bc7e5907139452f716a883697e108d65d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalentoPlus.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalentoPlus.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

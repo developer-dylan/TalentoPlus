@@ -28,10 +28,18 @@ namespace TalentoPlus.Web.Services.Implementations
                 return "Error: Gemini API Key is missing. Please configure 'Gemini:ApiKey' in appsettings.json.";
             }
 
+            // Read model from configuration (optional). If not set, use a stable default.
+            var model = _configuration["Gemini:Model"] ?? "gemini-2.5-flash";
+            // Remove "models/" prefix if present in the configuration (to avoid duplication in URL)
+            if (model.StartsWith("models/"))
+            {
+                model = model.Substring("models/".Length);
+            }
+
             // 1. Get Context Data
             var employees = await _context.Employees
                 .Include(e => e.Department)
-                .Select(e => new 
+                .Select(e => new
                 {
                     e.FullName,
                     e.JobTitle,
@@ -60,7 +68,7 @@ namespace TalentoPlus.Web.Services.Implementations
             sb.AppendLine(question);
 
             // 2. Call Gemini API
-            var url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={apiKey}";
+            var url = $"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={apiKey}";
 
             var payload = new
             {
@@ -82,22 +90,47 @@ namespace TalentoPlus.Web.Services.Implementations
             try
             {
                 var response = await _httpClient.PostAsync(url, content);
+                var responseString = await response.Content.ReadAsStringAsync();
+
                 if (!response.IsSuccessStatusCode)
                 {
-                    return $"Error calling Gemini API: {response.StatusCode}";
+                    // If model not found, try to list available models to help debugging
+                    if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    {
+                        try
+                        {
+                            var listUrl = $"https://generativelanguage.googleapis.com/v1beta/models?key={apiKey}";
+                            var listResp = await _httpClient.GetAsync(listUrl);
+                            var listBody = await listResp.Content.ReadAsStringAsync();
+                            return $"Error calling Gemini API: {response.StatusCode}. Body: {responseString}. Available models: {listBody}";
+                        }
+                        catch (Exception exList)
+                        {
+                            return $"Error calling Gemini API: {response.StatusCode}. Body: {responseString}. Additionally, listing models failed: {exList.Message}";
+                        }
+                    }
+
+                    return $"Error calling Gemini API: {response.StatusCode}. Body: {responseString}";
                 }
 
-                var responseString = await response.Content.ReadAsStringAsync();
-                var responseJson = JsonDocument.Parse(responseString);
-                
-                var text = responseJson.RootElement
-                    .GetProperty("candidates")[0]
-                    .GetProperty("content")
-                    .GetProperty("parts")[0]
-                    .GetProperty("text")
-                    .GetString();
+                try
+                {
+                    var responseJson = JsonDocument.Parse(responseString);
 
-                return text ?? "No response generated.";
+                    var text = responseJson.RootElement
+                        .GetProperty("candidates")[0]
+                        .GetProperty("content")
+                        .GetProperty("parts")[0]
+                        .GetProperty("text")
+                        .GetString();
+
+                    return text ?? "No response generated.";
+                }
+                catch (Exception exParse)
+                {
+                    // If parsing fails, return raw body for debugging
+                    return $"Response parsing failed: {exParse.Message}. Raw body: {responseString}";
+                }
             }
             catch (Exception ex)
             {

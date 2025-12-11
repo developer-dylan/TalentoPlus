@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TalentoPlus.Web.Data;
 using TalentoPlus.Data;
-using TalentoPlus.Data;
 
 // Repositories
 using TalentoPlus.Web.Repositories.Interfaces;
@@ -24,7 +23,10 @@ builder.Services.AddControllersWithViews();
 
 // DbContext (PostgreSQL)
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        npgsqlOptions => npgsqlOptions.MigrationsAssembly("TalentoPlus.Web")
+    )
 );
 
 // Identity Configuration

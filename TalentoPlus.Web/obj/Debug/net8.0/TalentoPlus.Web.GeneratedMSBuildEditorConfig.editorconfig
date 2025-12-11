@@ -15,81 +15,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = TalentoPlus.Web
 build_property.RootNamespace = TalentoPlus.Web
-build_property.ProjectDir = /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/
+build_property.ProjectDir = /home/fermotta/Música/TalentoPlus/TalentoPlus.Web/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web
+build_property.MSBuildProjectDirectory = /home/fermotta/Música/TalentoPlus/TalentoPlus.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Account/Login.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Dashboard/Index.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/Create.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/CV.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/CV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ1YuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/Delete.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/Details.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/Edit.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Employee/Index.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Excel/Upload.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Excel/Upload.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhjZWwvVXBsb2FkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Home/Index.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Home/Privacy.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Shared/Error.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/_ViewImports.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/_ViewStart.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Web/Views/Shared/_Layout.cshtml]
+[/home/fermotta/Música/TalentoPlus/TalentoPlus.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g1l4fswxao

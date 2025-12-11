@@ -11,3 +11,16 @@
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.pdb
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/ref/TalentoPlus.Data.dll
 /home/Coder/Escritorio/jdcnt/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.sourcelink.json
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.deps.json
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.dll
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/bin/Debug/net8.0/TalentoPlus.Data.pdb
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.csproj.AssemblyReference.cache
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.AssemblyInfoInputs.cache
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.AssemblyInfo.cs
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.csproj.CoreCompileInputs.cache
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.sourcelink.json
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.dll
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/refint/TalentoPlus.Data.dll
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/TalentoPlus.Data.pdb
+/home/fermotta/Música/TalentoPlus/TalentoPlus.Data/obj/Debug/net8.0/ref/TalentoPlus.Data.dll
